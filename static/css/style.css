@@ -1,0 +1,299 @@
+/* ****************************** */
+/* Variables */
+/* ****************************** */
+:root {
+  --primary-color: #4b4ded;
+  --secondary-color: #fcc919;
+  --accent: #3dd630;
+  --black-color: #000;
+  --text-color: #383838;
+  --white-color: #fff;
+  --gray-color: #dbdbdb;
+  --orange-color: #ff9c08;
+  --red-color: #f63232;
+  --body-font: "NexaLight";
+  --normal-font-size: 1rem;
+  --z-fixed: 100;
+  --header-font: "NexaXBold";
+  --nav-font: "NexaRegular";
+  --bold-font: "NexaBold";
+  --medium-font: "NexaBook";
+}
+
+/* ****************************** */
+/* Global */
+/* ****************************** */
+html {
+  height: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: var(--body-font) !important;
+}
+
+.width-100 {
+  width: 100% !important;
+}
+
+.height-100 {
+  height: 100% !important;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden !important;
+  color: var(--text-color) !important;
+  font-family: var(--body-font) !important;
+  background-image: url("../assets/images/background.png");
+}
+
+/* ****************************** */
+/* Header */
+/* ****************************** */
+.header {
+  width: 100%;
+  height: fit-content;
+  padding: 3rem 4rem;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+.p-link {
+  display: flex;
+  align-items: center;
+  color: var(--text-color) !important;
+  padding: 0rem 1.4rem;
+  font-family: var(--nav-font) !important;
+}
+
+.p-link:hover {
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
+}
+
+/* ****************************** */
+/* Body */
+/* ****************************** */
+.content {
+  width: 100% !important;
+}
+
+.page-overlay {
+  opacity: 0.8;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  backdrop-filter: blur(10px);
+}
+
+/* Hero Section */
+
+.hero {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.hero-text {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  color: var(--black-color) !important;
+  font-size: 3rem;
+  font-family: var(--header-font) !important;
+  line-height: normal;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+}
+
+.hero-button {
+  margin-top: 2rem;
+  font-family: var(--bold-font);
+  width: fit-content;
+  border-radius: 50rem;
+  padding: 1rem 2rem;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  box-shadow: 2px 4px 20px rgba(75, 77, 237, 0.3);
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px 8px rgba(75, 77, 237, 0.8);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 9rem;
+}
+
+/* How it works Section */
+
+.how-it-works {
+  margin: 3rem 0rem;
+  width: 90%;
+}
+
+.works-title {
+  font-size: 2.1rem;
+  font-family: var(--header-font) !important;
+  line-height: normal;
+  color: var(--black-color) !important;
+}
+
+.works-subtitle {
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  border-radius: 50rem;
+  padding: 0.5rem 1rem;
+  font-family: var(--nav-font) !important;
+  color: var(--accent);
+  background-color: rgba(61, 214, 48, 0.2);
+}
+
+.works-text,
+.section-title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 9rem;
+}
+
+.section-title {
+  margin-bottom: 4rem;
+}
+
+.works-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 9rem;
+}
+
+.step {
+  margin-bottom: 3rem;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: var(--bold-font);
+  font-size: 1rem;
+  margin-right: 2rem;
+  line-height: normal;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.number > span {
+  margin-top: 4px;
+}
+
+.step-title {
+  font-family: var(--bold-font);
+  font-size: 1.5rem;
+}
+
+/* Choosing Braqqet */
+.choosing-braqqet {
+  background-color: rgba(252, 201, 25, 0.8);
+}
+
+.choosing-text {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.choosing-icon {
+  margin-right: 2rem;
+}
+
+.choosing-row {
+  padding: 1.5rem 3rem;
+  margin: 3rem 0rem;
+}
+
+.band {
+  width: 90%;
+  padding: 5rem;
+  margin: 3rem 0rem;
+  background-color: rgba(252, 201, 25, 0.5);
+}
+
+.choosing-icon > i {
+  font-size: 3rem;
+}
+
+#airplay_icon {
+  color: #3dd630;
+}
+
+#search_icon {
+  color: #4b4ded;
+}
+
+#card_icon {
+  color: #ff9c08;
+}
+
+#copy_icon {
+  color: #fcc919;
+}
+
+/* Join our community */
+.community-content {
+  margin: 6rem 0rem;
+  text-align: center;
+}
+
+.join-community {
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-family: var(--bold-font);
+  width: fit-content;
+  border-radius: 50rem;
+  padding: 1rem 2rem;
+  color: var(--black-color);
+  background-color: var(--secondary-color);
+  box-shadow: 2px 4px 20px rgba(252, 201, 25, 0.3);
+  transition: 0.3s;
+}
+
+.join-community:hover {
+    cursor: pointer;
+    box-shadow: 1px 2px 8px rgba(252, 201, 25, 0.8);
+  }
+
+.community-title {
+  font-family: var(--bold-font);
+  font-size: 1.5rem;
+}
+
+.community-subtitle {
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+}
+
+/* ****************************** */
+/* Footer */
+/* ****************************** */

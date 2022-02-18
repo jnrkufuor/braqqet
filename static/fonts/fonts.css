@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'NexaBold';
+    font-style: normal;
+    font-weight: normal;
+    src:url('NexaBold.otf');
+}
+    
+@font-face {
+    font-family: 'NexaLight';
+    font-style: normal;
+    font-weight: normal;
+    src:url('NexaLight.otf');
+}
+    
+@font-face {
+    font-family: 'NexaRegular';
+    font-style: normal;
+    font-weight: normal;
+    src:url('NexaRegular.otf');
+}
+  
+@font-face {
+    font-family: 'NexaBook';
+    font-style: normal;
+    font-weight: normal;
+    src: url('NexaBook.otf');
+}
+
+@font-face {
+    font-family: 'NexaXBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('NexaXBold.otf');
+}
+

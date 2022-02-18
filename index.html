@@ -1,19 +1,242 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Braqqet</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../static/css/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    </head>
-    <body>
 
-               
-    </body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Braqqet</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/fonts/fonts.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<body>
+    <div class="page-overlay"></div>
+    <div class="contai content">
+        <!-- Sticky Header -->
+        <div class="header">
+            <div class="d-flex flex-row align-content-center justify-content-between">
+                <div class="logo">
+                    <img src="static/assets/images/logo.png" height="30" />
+                </div>
+                <div class="d-flex flex-row align-content-center justify-content-between">
+                    <a class="p-link" href="">About</a>
+                    <a class="p-link" href="">Blog</a>
+                    <a class="p-link" href="">Contact</a>
+                    <a class="p-link" href="">FAQs</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body Content -->
+        <!-- Hero Section-->
+        <div class="hero">
+            <div class="row" id="hero_section">
+                <div class="col-md-4">
+                    <div class="hero-text">
+                        <div class="d-flex flex-column align-content-center">
+                            <div class="hero-title">
+                                <span style="color: var(--primary-color)">Democratising</span>
+                                access to real estate investments.
+                            </div>
+                            <div class="hero-subtitle">
+                                Buy into, own and get returns on real esteate investments with
+                                as little as $10.
+                            </div>
+                            <div class="hero-button">Get Early Access</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="hero-image">
+                        <object type="image/svg+xml" data="static/assets/images/hero.svg">
+                            <img src="static/assets/images/hero.svg" width="90%" height="90%" />
+                        </object>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How it Works Section-->
+        <div class="how-it-works" id="how_it_works">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <div class="d-flex justify-content-center align-content-center">
+                            <div class="d-flex flex-column justify-content-center align-content-center">
+                                <div class="works-title">How Braqqet works</div>
+                                <div class="works-subtitle">We promise it's easy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="works-image">
+                        <object type="image/svg+xml" data="static/assets/images/working-section.svg">
+                            <img src="static/assets/images/working-section.svg" width="90%" height="90%" />
+                        </object>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="works-text">
+                        <div class="d-flex flex-column align-content-center">
+                            <div class="step d-flex flex-row align-content-center">
+                                <div class="number"> <span>1</span> </div>
+                                <div class="step-text d-flex flex-column justify-content-center align-content-center">
+                                    <div class="step-title">Sign Up</div>
+                                    <div class="step-subtitle d-flex flex-row align-content-center">Create a Braqqet
+                                        account in less than 5 minutes.</div>
+                                </div>
+                            </div>
+                            <div class="step d-flex flex-row align-content-center">
+                                <div class="number"> <span>2</span> </div>
+                                <div class="step-text d-flex flex-column justify-content-center align-content-center">
+                                    <div class="step-title">Fund Wallet</div>
+                                    <div class="step-subtitle d-flex flex-row align-content-center">Fund your Braqqet
+                                        wallet using any of the available options.</div>
+                                </div>
+                            </div>
+                            <div class="step d-flex flex-row align-content-center">
+                                <div class="number"> <span>3</span> </div>
+                                <div class="step-text d-flex flex-column justify-content-center align-content-center">
+                                    <div class="step-title">Buy into asset or property</div>
+                                    <div class="step-subtitle d-flex flex-row align-content-center">Buy any asset of
+                                        your choice and start your real estate investment journey.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Why Choose Braqqet -->
+        <div class="choosing-braqqet" id="choosing_braqqet">
+            <div class="band">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <div class="d-flex justify-content-center align-content-center">
+                                <div class="d-flex flex-column justify-content-center align-content-center">
+                                    <div class="works-title">Why choose Braqqet?</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="choosing-text">
+                            <div class="row choosing-row">
+                                <div class="d-flex flex-row align-content-center">
+                                    <div class="col-sm-6 d-flex flex-row align-content-center ">
+                                        <div class="choosing-icon"> <i data-feather="search" id="search_icon"></i>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center align-content-center">
+                                            <div class="step-title">Transparency</div>
+                                            <div class="step-subtitle d-flex flex-row align-content-center">Once you
+                                                have
+                                                made your choice and bought into a property. It is immediadiately
+                                                visible in
+                                                your portfolio and we provide you with monthly performance reports on
+                                                your
+                                                invested asset.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 d-flex flex-row align-content-center">
+                                        <div class="choosing-icon"> <i data-feather="copy" id="copy_icon"></i> </div>
+                                        <div class="d-flex flex-column justify-content-center align-content-center">
+                                            <div class="step-title">Freedom to choose</div>
+                                            <div class="step-subtitle d-flex flex-row align-content-center">Unlike other
+                                                real estate investments braqqet gives you the access to browse through
+                                                different property assets. We provide you with all property inforation
+                                                and enable you invest/buy in property of your choice.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row choosing-row">
+                                <div class="d-flex flex-row align-content-center">
+                                    <div class="col-sm-6 d-flex flex-row align-content-center">
+                                        <div class="choosing-icon"> <i data-feather="credit-card" id="card_icon"></i>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center align-content-center">
+                                            <div class="step-title">Buy and sell at will</div>
+                                            <div class="step-subtitle d-flex flex-row align-content-center">Due to
+                                                Braqqet’s
+                                                liquidation feature, you are able to sell property or asset at anytime
+                                                without any loss in value. </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 d-flex flex-row align-content-center">
+                                        <div class="choosing-icon"> <i data-feather="airplay" id="airplay_icon"></i>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center align-content-center">
+                                            <div class="step-title">Ease of management</div>
+                                            <div class="step-subtitle d-flex flex-row align-content-center">Sit back,
+                                                relax
+                                                while Braqqet takes care and manages your property for a little fee.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Community Section -->
+        <div class="community">
+            <div class="row" id="community_section">
+                <div class="col-md-12 community-content">
+                    <object type="image/svg+xml" data="static/assets/images/telegram.svg">
+                        <img src="static/assets/images/telegram.svg" width="90%" height="90%" />
+                    </object>
+                    <div class="d-flex flex-column justify-content-center align-content-center">
+                        <div class="works-title">Join our Telegram community!</div>
+                        <div class="community-subtitle">To learn more about our features, packages including tips, support
+                            and investment advice. Join our Telegram community, it is completely free.</div>
+                        <div class="join-community">Join Our Community</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="path/to/dist/feather.js"></script>
+<script>
+    feather.icons.search.toSvg({ 'width': 50, 'height': 50 });
+    feather.replace({ 'width': 60, 'height': 60, 'stroke-width': 1 });
+</script>
+
 </html>
