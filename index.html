@@ -12,18 +12,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <div class="page-overlay"></div>
+    <div class="mobile-nav">
+
+        <a class="m-link" href="">About</a>
+        <a class="m-link" href="">Blog</a>
+        <a class="m-link" href="">Contact</a>
+        <a class="m-link" href="pages/faq.html">FAQs</a>
+    </div>
     <div class="content">
         <!-- Sticky Header -->
         <div class="header">
-            <div class="d-flex flex-row align-content-center justify-content-between">
-                <div class="logo">
-                    <img src="static/assets/images/logo.png" height="30" />
+            <div class="header-content">
+                <a href="/">
+                    <div class="logo">
+                        <img src="static/assets/images/logo.png" height="30" />
+                    </div>
+                </a>
+                <div class="mobile-menu">
+                    <i data-feather="menu" id="menu_icon"></i>
                 </div>
-                <div class="d-flex flex-row align-content-center justify-content-between">
+
+
+                <div class="nav-links">
                     <a class="p-link" href="">About</a>
                     <a class="p-link" href="">Blog</a>
                     <a class="p-link" href="">Contact</a>
@@ -36,7 +51,7 @@
         <!-- Hero Section-->
         <div class="hero">
             <div class="row" id="hero_section">
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-12">
                     <div class="hero-text">
                         <div class="d-flex flex-column align-content-center">
                             <div class="hero-title">
@@ -47,13 +62,13 @@
                                 Buy into, own and get returns on real esteate investments with
                                 as little as $10.
                             </div>
-                            <div class="hero-button">Get Early Access</div>
+                            <div class="hero-button" id="route_to_modal">Get Early Access</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="hero-image">
-                        <object type="image/svg+xml" data="static/assets/images/hero.svg">
+                <div class="col-md-8 col-xs-12">
+                    <div class="hero-image" data-aos="fade-up">
+                        <object type="image/svg+xml" data="static/assets/images/hero.svg" width="100%" height="100%">
                             <img src="static/assets/images/hero.svg" width="90%" height="90%" />
                         </object>
                     </div>
@@ -64,7 +79,7 @@
         <!-- How it Works Section-->
         <div class="how-it-works" id="how_it_works">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-xs-12">
                     <div class="section-title">
                         <div class="d-flex justify-content-center align-content-center">
                             <div class="d-flex flex-column justify-content-center align-content-center">
@@ -76,14 +91,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="works-image">
-                        <object type="image/svg+xml" data="static/assets/images/working-section.svg">
+                <div class="col-md-6 col-xs-12">
+                    <div class="works-image" data-aos="fade-up">
+                        <object type="image/svg+xml" data="static/assets/images/working-section.svg" width="100%"
+                            height="100%">
                             <img src="static/assets/images/working-section.svg" width="90%" height="90%" />
                         </object>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-xs-12">
                     <div class="works-text">
                         <div class="d-flex flex-column align-content-center">
                             <div class="step d-flex flex-row align-content-center">
@@ -136,11 +152,11 @@
                     <div class="col-md-12">
                         <div class="choosing-text">
                             <div class="row choosing-row">
-                                <div class="d-flex flex-row align-content-center">
-                                    <div class="col-sm-6 d-flex flex-row align-content-center ">
+                                <div class="choosing-row-option">
+                                    <div class="col-sm-6 d-flex flex-row align-content-center choosing-gap" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                                         <div class="choosing-icon"> <i data-feather="search" id="search_icon"></i>
                                         </div>
-                                        <div class="d-flex flex-column justify-content-center align-content-center">
+                                        <div class="d-flex flex-column  align-content-center">
                                             <div class="step-title">Transparency</div>
                                             <div class="step-subtitle d-flex flex-row align-content-center">Once you
                                                 have
@@ -151,9 +167,9 @@
                                                 invested asset.</div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 d-flex flex-row align-content-center">
+                                    <div class="col-sm-6 d-flex flex-row align-content-center choosing-gap" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                                         <div class="choosing-icon"> <i data-feather="copy" id="copy_icon"></i> </div>
-                                        <div class="d-flex flex-column justify-content-center align-content-center">
+                                        <div class="d-flex flex-column  align-content-center">
                                             <div class="step-title">Freedom to choose</div>
                                             <div class="step-subtitle d-flex flex-row align-content-center">Unlike other
                                                 real estate investments braqqet gives you the access to browse through
@@ -164,22 +180,21 @@
                                 </div>
                             </div>
                             <div class="row choosing-row">
-                                <div class="d-flex flex-row align-content-center">
-                                    <div class="col-sm-6 d-flex flex-row align-content-center">
+                                <div class="choosing-row-option">
+                                    <div class="col-sm-6 d-flex flex-row align-content-center choosing-gap" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
                                         <div class="choosing-icon"> <i data-feather="credit-card" id="card_icon"></i>
                                         </div>
-                                        <div class="d-flex flex-column justify-content-center align-content-center">
+                                        <div class="d-flex flex-column  align-content-center">
                                             <div class="step-title">Buy and sell at will</div>
-                                            <div class="step-subtitle d-flex flex-row align-content-center">Due to
-                                                Braqqet’s
+                                            <div class="step-subtitle d-flex flex-row align-content-center">Braqqet’s
                                                 liquidation feature, you are able to sell property or asset at anytime
                                                 without any loss in value. </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 d-flex flex-row align-content-center">
+                                    <div class="col-sm-6 d-flex flex-row align-content-center choosing-gap" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1000">
                                         <div class="choosing-icon"> <i data-feather="airplay" id="airplay_icon"></i>
                                         </div>
-                                        <div class="d-flex flex-column justify-content-center align-content-center">
+                                        <div class="d-flex flex-column  align-content-center">
                                             <div class="step-title">Ease of management</div>
                                             <div class="step-subtitle d-flex flex-row align-content-center">Sit back,
                                                 relax
@@ -189,6 +204,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -199,12 +215,13 @@
 
         <!-- Community Section -->
         <div class="community">
-            <div class="row" id="community_section">
+            <div class="row" id="community_section" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
                 <div class="col-md-12 community-content">
-                    <object type="image/svg+xml" data="static/assets/images/telegram.svg">
+                    <object type="image/svg+xml" data="static/assets/images/telegram.svg" id="community_image"
+                        width="50%" height="50%">
                         <img src="static/assets/images/telegram.svg" width="90%" height="90%" />
                     </object>
-                    <div class="d-flex flex-column justify-content-center align-content-center">
+                    <div class="d-flex flex-column justify-content-center align-content-center ">
                         <div class="works-title">Join our Telegram community!</div>
                         <div class="community-subtitle">To learn more about our features, packages including tips,
                             support
@@ -217,11 +234,11 @@
 
 
         <!-- Get priority access  -->
-        <div class="access" id="access">
+        <div class="access" id="access" >
             <div class="p-band">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="access-content">
+                        <div class="access-content" data-aos="fade-in" data-aos-delay="200" data-aos-duration="800">
                             <div class="">
                                 <div class="d-flex flex-column justify-content-center align-content-center">
                                     <div class="access-title mb-5">Get priority access when we launch</div>
@@ -229,19 +246,19 @@
                                         <div
                                             class="d-flex flex-column justify-content-end align-content-center mb-4 access-group">
                                             <div class="input-label mb-1">Name</div>
-                                            <input class="access-input" id="access_name" placeholder="Emeka Madukwe" />
+                                            <input class="access-input" id="access_name" placeholder="John Doe" />
                                         </div>
                                     </div>
                                     <div>
                                         <div
                                             class="d-flex flex-column justify-content-center align-content-center mb-4 access-group">
                                             <div class="input-label mb-1">Email</div>
-                                            <input class="access-input" id="access_email"
-                                                placeholder="madukwe@email.com" />
+                                            <input class="access-input" id="access_email" placeholder="example@gmail.com" />
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="hero-button" id="access_button">Get Early Access</div>
+                                        <div class="hero-button disabled" id="access_button">Get Early Access</div>
+                       
                                     </div>
 
                                 </div>
@@ -254,31 +271,32 @@
 
     </div>
 
-     <!-- Footer -->
-     <div class="footer">
+    <!-- Footer -->
+    <div class="footer">
         <div class="row" id="footer_section">
             <div class="col-md-12">
                 <div class="d-flex flex-row justify-content-between align-content-center footer-content">
                     <div class="footer-text">© 2022 Braqqet</div>
                     <div class="footer-socials d-flex flex-row justify-content-between align-content-center">
-                        <i data-feather="facebook" class="socials"></i>
-                        <i data-feather="linkedin" class="socials"></i>
-                        <i data-feather="twitter" class="socials"></i>
+                        <a href="https://www.linkedin.com/in/braqqet-8062a2232"><i data-feather="linkedin"
+                                class="socials"></i></a>
+                        <a href="https://instagram.com/braqqet?utm_medium=copy_link"><i data-feather="instagram"
+                                class="socials"></i></a>
+                        <a href="https://twitter.com/braqqet?s=21"><i data-feather="twitter" class="socials"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    
-    </div>
 
     </div>
 
+    </div>
 
-   
+
+
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -290,5 +308,6 @@
     feather.icons.search.toSvg({ 'width': 50, 'height': 50 });
     feather.replace({ 'width': 60, 'height': 60, 'stroke-width': 1 });
 </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 </html>
