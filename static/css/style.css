@@ -82,7 +82,6 @@ body {
   position: -webkit-sticky;
   top: 0;
   z-index: 1000;
-  
 }
 
 .mobile-nav {
@@ -330,6 +329,8 @@ body {
   text-align: center;
 }
 
+
+
 .join-community {
   margin: 0 auto;
   margin-top: 2rem;
@@ -354,7 +355,7 @@ body {
   font-size: 1.5rem;
 }
 
-.community-content{
+.community-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -368,7 +369,7 @@ body {
   margin-top: 0.6rem;
 }
 
-#community_image{
+#community_image {
   transform: scale(1);
   margin-bottom: 2rem;
 }
@@ -378,36 +379,35 @@ body {
   background-color: rgba(75, 77, 237, 0.5);
 }
 
-.submitted, .failed{
-  display: flex !important;;
-  align-items: center!important;
-  justify-content:center!important;
+.submitted,
+.failed {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   padding: 1rem 2.4rem;
   width: 12rem;
-  background-color: var(--accent)!important;
-  cursor:default!important;
+  background-color: var(--accent) !important;
+  cursor: default !important;
   box-shadow: 2px 4px 20px rgba(252, 201, 25, 0) !important;
 }
 
-.submitted:hover{
+.submitted:hover {
   transform: scale(1);
 }
 
-.failed:hover{
+.failed:hover {
   transform: scale(1);
 }
 
-.failed{
-  background-color: var(--red-color)!important;
+.failed {
+  background-color: var(--red-color) !important;
 }
 
-
-
-.submitted>span{
-  margin-top:3px;
+.submitted > span {
+  margin-top: 3px;
 }
 
-#checkmark_icon{
+#checkmark_icon {
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -455,15 +455,15 @@ body {
   margin-top: 2rem;
 }
 
-.disabled{
+.disabled {
   opacity: 0.6;
-  box-shadow:none !important;
+  box-shadow: none !important;
   pointer-events: none;
 }
 
-.disabled:hover{
-  cursor: default!important;
-  transform: scale(1)!important;
+.disabled:hover {
+  cursor: default !important;
+  transform: scale(1) !important;
 }
 
 /* FAQ */
@@ -473,8 +473,8 @@ body {
   margin-top: 4rem;
 }
 
-.faq-subtitle{
-  width: 100%!important;
+.faq-subtitle {
+  width: 100% !important;
 }
 
 .faq-content {
@@ -508,7 +508,8 @@ body {
   line-height: 0px !important;
 }
 
-.btn-link.focus, .btn-link:focus {
+.btn-link.focus,
+.btn-link:focus {
   text-decoration: none;
 }
 
@@ -528,7 +529,8 @@ body {
   cursor: pointer;
 }
 
-#plus_icon, #minus_icon {
+#plus_icon,
+#minus_icon {
   color: var(--black-color) !important;
   width: 20px;
   height: 20px;
@@ -661,7 +663,6 @@ body {
     font-size: var(--normal-font-size);
   }
 
-  
   .nav-links {
     display: none !important;
   }
@@ -696,6 +697,11 @@ body {
     margin-right: 0.8rem;
   }
 
+  #telegram {
+    width: 100%;
+    height: 100%;
+  }
+  
   .step-title {
     font-size: 1.3rem;
   }
@@ -716,7 +722,7 @@ body {
 
   .choosing-row-option {
     flex-direction: column;
-    align-content: flex-start!important;
+    align-content: flex-start !important;
   }
   .choosing-icon {
     margin-right: 0.5rem;
@@ -750,8 +756,8 @@ body {
   }
 
   .community-content > object {
-    margin-bottom: 3rem!important;
-    transform: scale(1.5)!important;
+    margin-bottom: 3rem !important;
+    transform: scale(1.5) !important;
   }
   .access-group {
     width: 90%;
@@ -775,8 +781,8 @@ body {
   .btn {
     display: flex;
     align-items: center;
-    text-align: initial!important;
-    justify-content:space-between;
+    text-align: initial !important;
+    justify-content: space-between;
     font-size: 1.2rem !important;
     max-width: 80%;
     word-wrap: break-word !important;
@@ -803,28 +809,25 @@ body {
 @media screen and (min-width: 1200px) {
 }
 
-
 /* Animations */
 @keyframes submit {
   80% {
     background-color: var(--accent);
     box-shadow: 1px 2px 8px rgba(75, 77, 237, 0);
- }
+  }
 }
 
 @keyframes fail {
   80% {
     background-color: var(--red-color);
     box-shadow: 1px 2px 8px rgba(75, 77, 237, 0);
- }
+  }
 }
 
-
-.animate-submit{
-  animation: submit 3s ;
+.animate-submit {
+  animation: submit 3s;
 }
 
-
-.animate-fl{
-  animation: fail 3s ;
+.animate-fl {
+  animation: fail 3s;
 }
